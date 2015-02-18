@@ -1,7 +1,7 @@
 vagrantとchefでCentOSにkvmがインストール済みの[railsチュートリアル](http://railstutorial.jp/)環境を作る
 ===
 
-# rubyとkvmがインストールされたcentos6.5環境をセットアップ
+* rubyとkvmがインストールされたcentos6.5環境をセットアップ
 * rails-tutorialの環境セットアップのための下準備までを行う
 
 ### 前提
@@ -88,6 +88,33 @@ git version 1.7.1
 ### rvm最新化
 ```
 [root@vagrant-centos65 ~]# rvm get head && rvm reload
+Downloading https://get.rvm.io
+Downloading https://raw.githubusercontent.com/wayneeseguin/rvm/master/binscripts/rvm-installer.asc
+Verifying /usr/local/rvm/archives/rvm-installer.asc
+gpg: directory `/root/.gnupg' created
+gpg: new configuration file `/root/.gnupg/gpg.conf' created
+gpg: WARNING: options in `/root/.gnupg/gpg.conf' are not yet active during this run
+gpg: keyring `/root/.gnupg/pubring.gpg' created
+gpg: Signature made Wed 07 Jan 2015 01:06:20 AM UTC using RSA key ID BF04FF17
+gpg: Can't check signature: No public key
+Warning, RVM 1.26.0 introduces signed releases and automated check of signatures when GPG software found.
+Assuming you trust Michal Papis import the mpapis public key (downloading the signatures).
+
+GPG signature verification failed for '/usr/local/rvm/archives/rvm-installer' - 'https://raw.githubusercontent.com/wayneeseguin/rvm/master/binscripts/rvm-installer.asc'!
+try downloading the signatures:
+
+    gpg2 --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+
+or if it fails:
+
+    command curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
+
+the key can be compared with:
+
+    https://rvm.io/mpapis.asc
+    https://keybase.io/mpapis
+
+-bash: return: _ret: numeric argument requiredi
 ```
 
 * gpgの認証ワーニングが出たら、言われた通りにする
@@ -150,7 +177,7 @@ update:  --no-rdoc --no-ri
 ---
 ```
 
-* rails インストール
+* rails インストール  
   注）時間かかる
 
 ```
