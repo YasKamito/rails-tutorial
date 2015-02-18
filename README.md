@@ -6,10 +6,13 @@ vagrantとchefでCentOSにkvmがインストール済みの[railsチュートリ
 
 ### 前提
 
+* MacOS v10.10.2
 * virtualboxインストール済み
 * vagrantインストール済み
 * vagrant omnibusプラグインインストール済み
-※ (hostOS上に)ruby & gemインストール済み
+* (hostOS上に)ruby & gemインストール済み
+* guestOSのネットワークはBridge(en1: Wi-Fi)で作成
+* guestOSのIPは192.168.10.33
 
 
 ### Berksfileインストール
@@ -24,7 +27,6 @@ ZENIKAMI-iMac:~ yas$ vagrant box list
 centos65_x86_64     (virtualbox)
 ZENIKAMI-iMac:~ yas$ git clone https://github.com/YasKamito/rails-tutorial.git
 ZENIKAMI-iMac:~ yas$ cd vagrant-rails
-ZENIKAMI-iMac:vagrant-rails yas$ vagrant init centos65_x86_64
 ```
 
 ### berkshelfを実行してレシピをインストールする
