@@ -1,4 +1,4 @@
-vagrantとchefでCentOSにkvmがインストール済みの[railsチュートリアル](http://railstutorial.jp/)環境を作る
+vagrantとchefでCentOSにrvmがインストール済みの[railsチュートリアル](http://railstutorial.jp/)環境を作る
 ===
 
 * rubyとkvmがインストールされたcentos6.5環境をセットアップ
