@@ -1,7 +1,7 @@
 vagrantとchefでCentOSにrvmがインストール済みの[railsチュートリアル](http://railstutorial.jp/)環境を作る
 ===
 
-* rubyとkvmがインストールされたcentos6.5環境をセットアップ
+* rubyとrvmがインストールされたcentos6.5環境をセットアップ
 * rails-tutorialの環境セットアップのための下準備までを行う
 
 ### 前提
@@ -15,7 +15,7 @@ vagrantとchefでCentOSにrvmがインストール済みの[railsチュートリ
 * guestOSのIPは192.168.10.33
 
 
-### Berksfileインストール
+### Berkshelfインストール
 ```
 ZENIKAMI-iMac:~ yas$ gem install berkshelf
 ```
